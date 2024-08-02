@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Decodificador de Texto</title>
 </head>
 <body>
-    <header>
-        <h1>Decodificador de Texto</h1>
-    </header>
     <main>
-        <section>
+        <section class="input-section">
             <textarea name="input" id="input-textarea" cols="40" rows="5" placeholder="Digite seu texto..."></textarea>
             <div class="reminder">
                 <img src="images/icone-exclamacao.png" alt="Ícone de exclamação">
                 <p>Apenas letras minúsculas e sem acento.</p>
             </div>
+
             <div class="buttons">
                 <button id="btn-encrypt" onclick="Criptografar()">Criptografar</button>
                 <button id="btn-decrypt" onclick="Descriptografar()">Descriptografar</button>
             </div>
         </section>
-        <section>
+        <section class="output-section">
             <div class="initial-message">
-                <p>Nenhuma mensagem encontrada.</p>
-                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <img src="images/personagem-imagem.svg" alt="Imagem de um menino procurando algo com uma lupa">
+                <p id="message">Nenhuma mensagem encontrada</p>
+                <p id="descriptive">Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
 
             <div class="final-message">
@@ -34,7 +34,7 @@
         </section>
     </main>
     <footer>
-        <p>Em construção...</p>
+        <p>Desenvolvido por Thais Barbosa &copy;</p>
     </footer>
 
     <script src="scripts/app.js"></script>

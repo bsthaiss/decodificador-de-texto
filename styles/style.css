@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #052051;
+    --light-blue: #D8DFE8;
+    --light-blue-100: #F3F5FC;
+    --white: #FFFFFF;
+    --gray-400: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-blue-100);
+    line-height: 1.6; 
+}
+
+main {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 0 5rem;
+    padding: 1rem; 
+}
+
+.input-section {
+    width: 70%;
+}
+
+.output-section {
+    background-color: var(--white);
+    border-radius: 1.5rem;
+    height: 100vh;
+    width: 25rem;
+}
+
+#input-textarea {
+    background-color: var(--light-blue-100);
+    border: none;
+    color: var(--dark-blue-300);
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 10.5rem;
+    outline: none;
+    resize: none;
+    width: 100%;
+}
+
+#input-textarea::placeholder {
+    color: var(--dark-blue-300);
+}
+
+.reminder {
+    align-items: center;
+    color: var(--gray-400);
+    display: flex;
+    font-size: .75rem;
+    margin-bottom: .25rem;
+    padding: .5rem;
+}
+
+.reminder img {
+    margin-right: .3125rem;
+}
+
+.initial-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#descriptive {
+    font-size: .75rem;
+}
+
+.initial-message img {
+    margin-top: 5rem;
+    width: 19.6875rem;
+    height: 18.75rem;
+}
+
+#message {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.final-message {
+    display: none;
+}
+
+#output-textarea {
+    background-color: var(--white);
+    border: none;
+    font-size: 1.5rem;
+    margin: 2rem;
+    resize: none;
+}
+
+#output-textarea:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.buttons button, #btn-copy {
+    border-radius: 1.5rem;
+    cursor: pointer;
+    padding: 1.5rem;
+    width: 20.5rem;
+    height: 4.1875rem;
+    transition: 0.3s;
+}
+
+#btn-encrypt {
+    background-color: var(--dark-blue-300);
+    border: none;
+    color: var(--white);
+}
+
+#btn-encrypt:hover {
+    background-color: var(--dark-blue-400);
+}
+
+#btn-decrypt, #btn-copy {
+    background-color: transparent;
+    color: var(--dark-blue-300);
+    border: solid .0313rem var(--dark-blue-300);
+}
+
+#btn-decrypt:hover, #btn-copy:hover {
+    background-color: var(--light-blue);
+}
+
+#btn-copy {
+    margin-top: 8rem;
+    margin-inline: 2rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    color: var(--dark-blue-300);
+}

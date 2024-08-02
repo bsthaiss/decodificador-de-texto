@@ -15,6 +15,7 @@ function Criptografar() {
             .replace(/u/g, "ufat");
 
         document.getElementById("output-textarea").value = textoEncriptado;
+        atualizarSecao();
     }
 }
 
@@ -30,6 +31,7 @@ function Descriptografar() {
         .replace(/ufat/g, "u");
 
     document.getElementById("output-textarea").value = textoEncriptado;
+    atualizarSecao();
 }
 
 function Copiar() {
@@ -51,3 +53,20 @@ function verificarVazio() {
 
     return false;
 }
+
+function atualizarSecao() {
+    const saida = document.getElementById("output-textarea");
+    const mensagemFinal = document.querySelector(".final-message");
+    const mensagemInicial = document.querySelector(".initial-message");
+
+    if (saida.value.trim() !== "") {
+        mensagemFinal.style.display = "block";
+        mensagemInicial.style.display = "none";
+    } else {
+        mensagemFinal.style.display = "none";
+        mensagemInicial.style.display = "block";
+    }
+}
+
+document.getElementById("input-textarea").addEventListener("input", atualizarSecao);
+document.addEventListener("DOMContentLoaded", atualizarSecao);

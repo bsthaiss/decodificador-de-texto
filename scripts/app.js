@@ -38,6 +38,7 @@ function Copiar() {
     const textoSaida = document.getElementById("output-textarea").value;
     navigator.clipboard.writeText(textoSaida).then(() => {
         alert("Texto copiado para a área de transferência!");
+        resetarTexto();
     }).catch(err => {
         console.error("Erro ao copiar texto: ", err);
     });
@@ -66,6 +67,12 @@ function atualizarSecao() {
         mensagemFinal.style.display = "none";
         mensagemInicial.style.display = "block";
     }
+}
+
+function resetarTexto() {
+    document.getElementById("input-textarea").value = "";
+    document.getElementById("output-textarea").value = "";
+    atualizarSecao();
 }
 
 document.getElementById("input-textarea").addEventListener("input", atualizarSecao);

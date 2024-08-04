@@ -1,0 +1,140 @@
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2rem;
+    }
+
+    .input-section {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .output-section {
+        background-color: var(--white);
+        border-radius: 1.5rem;
+        width: 90vw;
+        max-width: 25rem;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .initial-message img {
+        display: none;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .buttons button {
+        width: 20.5rem;
+        height: 4.1875rem;
+    }
+
+    #output-textarea {
+        width: 100%;
+        max-width: 20rem;
+        height: 4rem;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+    }
+
+    #btn-copy {
+        width: 100%;
+        max-width: 20.5rem;
+        height: 4.1875rem;
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1124px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2rem;
+    }
+
+    .input-section {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reminder {
+        align-items: flex-start;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .output-section {
+        background-color: var(--white);
+        border-radius: 1.5rem;
+        width: 90vw;
+        max-width: 42.5rem;
+        height: auto;
+        padding: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .initial-message img {
+        display: none;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .buttons button {
+        flex: 1;
+        max-width: 20.5rem;
+        height: 4.1875rem;
+    }
+
+    #output-textarea {
+        width: 100%;
+        max-width: 20.5rem;
+        height: 4.5rem;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+    }
+
+    #btn-copy {
+        width: 90vw;
+        max-width: 42.3em;
+        height: 4.1875rem;
+        margin-top: 0.5rem;
+        display: block;
+        margin: 0 auto;
+    }
+}
